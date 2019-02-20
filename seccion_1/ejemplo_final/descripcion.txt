@@ -1,0 +1,2 @@
+En este ejercicio final utilizaremos lo aprendido para simular la pagina de Facebook, solo por aprendizaje.
+Será una pagina estatica y 

@@ -1,0 +1,2 @@
+En la clase de hoy veremos enlaces,tablas,listas,los atributos class y id.
+Se desarrollara 
