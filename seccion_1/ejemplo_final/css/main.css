@@ -1,0 +1,28 @@
+/*Main containers*/
+#navbar{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to top,#29487d,#385383)
+}
+#body{
+    width: 100%;
+    height: 55vh;
+}
+#footer{
+    width: 100%;
+    height: 25vh;
+}
+/*//Main containers*/
+/*Normal containers*/
+.box{
+    width: 100%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+/*//Normal containers*/
+.box.navbar{
+    padding-top: 5vh;
+}
+.logo{
+    width: 2vw;
+}
