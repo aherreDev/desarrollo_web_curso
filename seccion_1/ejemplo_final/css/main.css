@@ -1,8 +1,13 @@
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+}
 /*Main containers*/
 #navbar{
     width: 100%;
-    height: 20vh;
-    background: linear-gradient(to top,#29487d,#385383)
+    height: 10vh;
+    margin-top: 0px !important;
+    background: linear-gradient(to top,#355180,#385383)
 }
 #body{
     width: 100%;
@@ -16,13 +21,15 @@
 /*Normal containers*/
 .box{
     width: 100%;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 23.5vw;
+    padding-right: 23.5vw;
 }
 /*//Normal containers*/
 .box.navbar{
     padding-top: 5vh;
 }
+
+/*
 .logo{
     width: 2vw;
 }
