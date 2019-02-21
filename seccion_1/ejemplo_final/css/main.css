@@ -1,17 +1,21 @@
 body{
     padding: 0px !important;
     margin: 0px !important;
+    font-family: 'Freight Sans', Helvetica, Arial, sans-serif !important;
+
 }
 /*Main containers*/
 #navbar{
     width: 100%;
-    height: 10vh;
+    height: 8.5vh;
     margin-top: 0px !important;
+    
     background: linear-gradient(to top,#355180,#385383)
 }
 #body{
     width: 100%;
-    height: 55vh;
+    height: 66vh;
+    background-color: #e9ebee;
 }
 #footer{
     width: 100%;
@@ -27,8 +31,67 @@ body{
 /*//Normal containers*/
 .box.navbar{
     padding-top: 5vh;
+    max-width: 25vw !important;
+}
+/*Menu navbar*/
+.menu.left{
+    position: absolute;
+    top: 3.8vh;
+    left: 23.5vw;
+    /*padding-top: 5vh !important;*/
+}
+.menu.right{
+    position: absolute;
+    top: 2.2vh;
+    right: 23.5vw;
+    
+    color: white;
+}
+/*//Menu navbar*/
+.item{
+    display: inline-block;
+    margin-right:.8vw;
+    font-size: 1.4vh;
+    padding-bottom: 10px;
+    /*width: 50 !important;*/
 }
 
+button{
+    padding: .3em .2em;
+    background-color: #4267b2 !important;
+    color: white;
+    border: 1px solid #29487d;
+    /*border-color: ;*/
+
+}
+.recover{
+    font-size: 1.5vh;
+    color: #9cb4d8;
+}
+.recover.true:hover{
+    text-decoration: underline;
+}
+.column{
+    height: 100%;
+    display: inline-block;
+}
+.titulo1{
+    font-size: 3.7vh;
+}
+.profile{
+    height: 20vh !important;
+    width: 8vw;
+    background-color: #fff;
+}
+.profile.image{
+    border: none;
+    background: none !important;
+}
+.profile.name{
+    text-align: center;
+    border: none;
+    background: none !important;
+}
 /*
 .logo{
     width: 2vw;
