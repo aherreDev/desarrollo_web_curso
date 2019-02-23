@@ -1,2 +1,2 @@
 En la clase de hoy veremos enlaces,tablas,listas,los atributos class y id.
-Se desarrollara 
+Se desarrollara un pequeño ejercicio en el que se utilizara la tecnica de maquetado en tablas
