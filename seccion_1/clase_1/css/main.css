@@ -1,0 +1,23 @@
+#table{
+    color: blue;
+    border: 2px black dashed;
+    border-collapse: collapse;
+}
+td{
+    border: 2px black solid;
+}
+.resaltar{
+    color: black;
+    font-size: 3vh;
+}
+.resaltar.objetivo{
+    color: gray;
+    font-size: 3vh;
+}
+.logo{
+    width: 10vw;
+    border-radius: 50%;
+}
+.ejemplo{
+    height: 50vh;
+}

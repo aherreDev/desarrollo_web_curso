@@ -1,0 +1,39 @@
+html{
+
+}
+#navbar{
+    height: 15vh;
+    width: 98vw;
+    background-color: rgb(13, 70, 70);
+}
+#container{
+    height: 60vh;
+    width: 98vw;
+}
+#footer{
+    height: 25vh;
+    width: 98vw;
+    background-color: rgba(112, 108, 108, 0.548);
+}
+.box{
+    padding-top: 4vh;
+    width: 98vw;
+}
+#container.box{
+    padding-top: 0vh;
+}
+.items{
+    float: right;
+    font-size: 4vh;
+    margin-right: 2vw;
+}
+.preview{
+    width: 20vw;
+}
+.descripcion{
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.publicacion:hover{
+    background-color: rgb(167, 164, 164);
+}
