@@ -1,0 +1,5 @@
+Notas de las clase
+Tablas:
+ Tienen las siguientes propiedades CSS distintivos:border,border-collapse,padding,text-align,border-spacing
+ Tienen los siguientes atributos colspan y rowspan
+ Se usan las siguientes etiquetas: <table>,<tr>,<th>,<td>,<caption>
