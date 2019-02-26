@@ -34,24 +34,262 @@
     </div>
     <div id="body">
         <div class="box body" style="width: 50vw;">
-            <div class="column">
+            <div class="column right">
                 <h1 class="titulo1" style="padding-bottom: 0px !important;margin-bottom: 0px !important;">Inicios de sesi&oacute;n recientes</h1>
                 <p>Haz clic en tu foto o agrega una cuenta.</p>
                 <div class="gallery">
-                    <span class="profile">
-                        <img class="profile image" src="https://s3.amazonaws.com/uifaces/faces/twitter/adrienths/128.jpg">
-                        <div class="profile name">Adrienths Example</div>
+                    <span style="display: inline-block">
+                        <span class="profile box">
+                            <img class="profile image" src="http://portal.bilardo.gov.tr/assets/pages/media/profile/profile_user.jpg">
+                            <div class="profile name">Adrienths Example</div>
+                        </span>
+                    </span>
+                    <span style="display: inline-block">
+                        <span class="profile box">
+                            <img class="profile image" src="http://mifisco.com/assets/img/client_team/6.jpg">
+                            <div class="profile name">Adrienths Example</div>
+                        </span>
+                    </span>
+                    <span style="display: inline-block">
+                        <span class="profile box">
+                            <img class="profile image" src="https://secure.gravatar.com/avatar/b10f7ddbf9b8be9e3c46c302bb20101d?s=400&d=mm&r=g">
+                            <div class="profile name">Adrienths Example</div>
+                        </span>
+                    </span>
+                    <span style="display: inline-block">
+                        <span class="profile box">
+                            <div class="profile image add">
+                                    <a class="button add">
+                                        <img style="margin-top: 35%;" src="../resources/add.png" />
+                                    </a>
+                            </div>
+                            <div class="profile name add">Agregar Cuenta</div>
+                        </span>
                     </span>
                 </div>
             </div>
-            <div class="column">
-
+            <div class="column left">
+                <h1 class="titulo1" style="padding-bottom: 0px !important;margin-bottom: 0px !important;">Crear una cuenta</h1>
+                <p>Es gratis y lo seguira siendo.</p>
+                <form>
+                    <div class="form row" style="display:flex;flex-wrap: wrap;">
+                        <input style="display:inline !important;" class="form input sub" placeholder="Nombre" type="text"/>
+                        <input style="display:inline !important;" class="form input sub" placeholder="Apellido" type="text"/>
+                        <input class="form input" placeholder="Numero de celular o correo electronico" type="email"/>
+                    </div>
+                    <h3 id="date">Fecha de nacimiento</h3>
+                    <div>
+                        <select class="select date">
+                            <option disabled selected>
+                                D&iacute;a
+                            </option>
+                            <option>
+                                1
+                            </option>
+                            <option>
+                                2
+                            </option>
+                            <option>
+                                3
+                            </option>
+                            <option>
+                                4
+                            </option>
+                            <option>
+                                5
+                            </option>
+                            <option>
+                                6
+                            </option>
+                            <option>
+                                7
+                            </option>
+                            <option>
+                                8
+                            </option>
+                            <option>
+                                9
+                            </option>
+                            <option>
+                                10
+                            </option>
+                            <option>
+                                11
+                            </option>
+                            <option>
+                                12
+                            </option>
+                            <option>
+                                13
+                            </option>
+                            <option>
+                                14
+                            </option>
+                            <option>
+                                15
+                            </option>
+                            <option>
+                                16
+                            </option>
+                            <option>
+                                17
+                            </option>
+                            <option>
+                                18
+                            </option>
+                            <option>
+                                19
+                            </option>
+                            <option>
+                                20
+                            </option>
+                            <option>
+                                21
+                            </option>
+                            <option>
+                                22
+                            </option>
+                            <option>
+                                23
+                            </option>
+                            <option>
+                                24
+                            </option>
+                            <option>
+                                25
+                            </option>
+                            <option>
+                                26
+                            </option>
+                            <option>
+                                27
+                            </option>
+                            <option>
+                                28
+                            </option>
+                            <option>
+                                29
+                            </option>
+                            <option>
+                                30
+                            </option>
+                            <option>
+                                31
+                            </option>
+                        </select>
+                        <select class="select date">
+                            <option disabled selected>
+                                Mes
+                            </option>
+                            <option>
+                                Enero
+                            </option>
+                            <option>
+                                Febrero
+                            </option>
+                            <option>
+                                Marzo
+                            </option>
+                            <option>
+                                Abril
+                            </option>
+                            <option>
+                                Mayo
+                            </option>
+                            <option>
+                                Junio
+                            </option>
+                            <option>
+                                Julio
+                            </option>
+                            <option>
+                                Agosto
+                            </option>
+                            <option>
+                                Septiembre
+                            </option>
+                            <option>
+                                Octubre
+                            </option>
+                            <option>
+                                Noviembre
+                            </option>
+                            <option>
+                                Diciembre
+                            </option>
+                        </select>
+                        <select class="select date">
+                            <option selected disabled>
+                                A&ntilde;o
+                            </option>
+                            <option>
+                                2010
+                            </option>
+                            <option>
+                                2011
+                            </option>
+                            <option>
+                                2012
+                            </option>
+                            <option>
+                                2013
+                            </option>
+                            <option>
+                                2014
+                            </option>
+                        </select>
+                        <a id="why" href="#">¿Por qu&eacute; tengo que indicar mi fecha de nacimiento?</a>
+                    </div>
+                        <br/>
+                        <input type="radio" /><label class="gender label">Mujer</label>
+                        <input type="radio" /><label class="gender label">Hombre</label>
+                        <p class="contrat">
+                            Al hacer clic en "Registrarte", aceptas nuestras <a class="politicas" href="#condiciones">Condiciones</a>, la <a class="politicas" href="#politicadatos">Pol&iacute;tica de datos</a> y la <a class="politicas" href="cookies">Pol&iacute;tica de cookies</a>. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.
+                        </p>
+                </form>
             </div>
         </div>
     </div>
     <div id="footer">
         <div class="box footer">
-
+            <div class="idiomas">
+                <ul>
+                    <li>
+                        <a>Espa&ntilde;ol</a>
+                    </li>
+                    <li>
+                        <a href="#English">English(US)</a>
+                    </li>
+                    <li>
+                        <a href="#Portuges">Portugu&ecaron;s(Brasil)</a>
+                    </li>
+                    <li>
+                        <a href="#Frances">Français(France)</a>
+                    </li>
+                    <li>
+                        <a href="#Italiano">Italiano</a>
+                    </li>
+                    <li>
+                        <a href="#Aleman">Deutsch</a>
+                    </li>
+                    <li>
+                        <a href="#Arabico">العربية</a>
+                    </li>
+                    <li>
+                        <a href="#Japones">日本語</a>
+                    </li>
+                    <li>
+                        <a href="#Hindu">हिन्दी</a>
+                    </li>
+                    <li>
+                        <a href="#chino">中文(简体)</a>
+                    </li>
+                    <li>
+                        <button>+</button>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
     </div>
 </body>
