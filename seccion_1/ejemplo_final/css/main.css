@@ -201,6 +201,11 @@ Footer
     border-bottom: rgb(221, 223, 226) solid .1vh;
     border-bottom-color: gray;
 }
+.button.len{
+    width: 1.5vw;
+    border-radius: 25%;
+    background-color: #f5f6f7 ;
+}
 li{
     padding-top: 2%;
     padding-bottom: 1.5%;    
@@ -220,6 +225,9 @@ li{
     font-size: 2vh;
     font-weight: bold;
 }
+#singUp:hover{
+    cursor: pointer;
+}
 #extra{
     padding-top: 3vh;
     font-size: 1.3vh;
@@ -231,8 +239,13 @@ a{
     color: #365899;
 }
 li.extra{
+    font-size: 1.4vh;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+#tag{
+    transform: rotate(40deg);
+    
 }
 /*
 .profile.box{
