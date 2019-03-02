@@ -5,3 +5,9 @@
 .enlace:hover{
     color: blue;
 }
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
