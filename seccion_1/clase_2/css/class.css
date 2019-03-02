@@ -1,0 +1,7 @@
+#exampleSection{
+    height: 5vh;
+    border: 1.5px dotted rgb(117, 4, 245);
+}
+.enlace:hover{
+    color: blue;
+}

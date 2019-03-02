@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/class.css">
+</head>
+<body>
+    <section id="header">
+        <h1 id="mainTitle">Clase 2</h1>
+        <p class="description">Etiquetas html m&aacute;s comunes en el desarrollo de paginas</p>
+    </section>
+    <section id="container">
+        <section id="html">
+            <h2 class="sectionTitle">HTLML</h2>
+            <hr/>
+            <p>
+                Etiquetas html y sus usos
+            </p>
+            <section class="subContent">
+                <ul>
+                    <li>
+                        <h3 class="subSectionTitle">Formularios</h3>
+                        <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    &lt;form>
+        &lt;label for="any name">Un texto&lt;/label>
+        &lt;input type="text || number || date || password ||email ||button" value="" name=""/>
+    &lt;/form>
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <form>
+                                    <label for="field">Un texto</label>
+                                    <input type="text" value="" name="field" />
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="subSectionTitle">Secciones</h3>
+                        <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    &lt;section>
+        &lt; etiqueta HTML/>
+    &lt;/section>
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <section id="exampleSection">
+                                        &lt; etiqueta HTML/>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="subSectionTitle">Botones</h3>
+                        <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    &lt;button>
+        texto
+    &lt;/button>
+    &lt;input type="button" value="subir"/>
+    &lt;input type="submit"/>
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <button>texto</button>
+                                <input type="button" value="subir">
+                                <input type="submit">
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="subSectionTitle">Media</h3>
+                        <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    &lt;video width="320" height="240" controls>
+        &lt;source src="https://www.w3schools.com/movie.mp4" type="video/mp4">
+        &lt;source src="https://www.w3schools.com/movie.ogg" type="video/ogg">
+    &lt;/video>
+    &lt;iframe src="" allowfullscreen>&lt;/iframe>
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <video width="560" height="315" controls>
+                                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+                                    <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg" />
+                                </video>
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bILE5BEyhdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="subSectionTitle">Entidades</h3>
+                        <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    &amp;eacute;
+    &amp;nbsp;
+    &amp;nbsp;
+    &amp;ntilde;
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                &eacute;
+                                &nbsp;&nbsp;&nbsp;
+                                &ntilde;
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section id="css">
+            <h2 class="sectionTitle">CSS</h2>
+            <hr/>
+            <p>
+                Css para manejo de posiciones absolutas y manejo de "eventos"
+            </p>
+            <section class="subContent">
+            <ul>
+                <li>
+                    <h3 class="subSectionTitle">Eventos</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class:hover{
+        color:blue;
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <p class="enlace">Ejemplo</p>
+                            </div>
+                            
+                        </div>
+                </li>
+            </ul>
+            </section>
+        </section>
+    </section>
+    
+</body>
+</html>
