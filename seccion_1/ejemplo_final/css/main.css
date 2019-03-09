@@ -2,7 +2,6 @@ body{
     padding: 0px !important;
     margin: 0px !important;
     font-family: 'Freight Sans', Helvetica, Arial, sans-serif !important;
-
 }
 /*Main containers*/
 #navbar{
@@ -34,7 +33,7 @@ body{
     max-width: 25vw !important;
 }
 .box.body{
-    display: inline-flex;
+    display: inline-flex;/* like flex */
 }
 .box.footer{
     max-width: 50vw !important;

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+#exampleSection{
+    height: 5vh;
+    border: 1.5px dotted rgb(117, 4, 245);
+}
+.enlace:hover{
+    color: blue;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.padding{
+    padding: 10% 2% 2% 10%;
+    padding-top: 5%;
+}
+.tempo{
+    background-color: rgba(128, 0, 128, 0.377);
+}
+.margin{
+    margin: 10% 2% 2% 10%;
+    margin-top: 5%;
+}
+.widthMax{
+    max-width: 200px;
+    height: 30px;
+    overflow-y: scroll;
+}
+.heightMax{
+    max-height: 40px;
+    overflow-x: hidden;
+}
+.tempo.blocks{
+    margin-bottom: 2vh;
+}
+.none{
+    border: 1px dashed white;
+    display:none;
+}
+.block{
+    border: 1px dashed white;
+    display:block;
+}
+.inline{
+    border: 1px dashed white;
+    display:inline;
+}
+.inlineBlock{
+    border: 1px dashed white;
+    display:inline-block;
+}
+.flex{
+    display:flex; /*Lo veremos en la siguiente clase*/
+}
+.item{
+    border: 1px dashed white;
+    flex-grow: 2;
+}
+.absolute{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: rgb(204, 197, 197);
+    font-size:50%;
+}
+.tempo.size{
+    position: relative;
+    height: 15vh;
+    width: 15vw;
+}
+.textShadow{
+    text-shadow: 2px 2px #ff0000;
+}
+.boxShadow{
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, .3);
+}
+.cursor{
+    cursor: pointer;
+}
+.font{
+    list-style: circle;
+}
+.font.ancho{
+    font-weight: bold;
+}
+.font.grande{
+    font-size: 3vh;
+}
+.font.tipo{
+    font-family: 'Sniglet', cursive;
+}

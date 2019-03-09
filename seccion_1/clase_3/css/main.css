@@ -1,0 +1,145 @@
+body{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+}
+button{
+    background: none;
+    border: none;
+}
+h1,h2,h3{
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+hr{
+    margin-top: 0px;
+}
+ul{
+    list-style: none;
+}
+pre{
+    text-align: left;
+}
+#header{
+    padding: 5vh 5vw;
+    background-image: linear-gradient(to right, rgb(117, 4, 245) , rgb(77, 23, 138));
+    text-align: center;
+    color: white;
+}
+#mainTitle{
+    font-style: italic;
+    font-size: 10vh;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.description{
+    padding-top: 4px;
+    margin-top: 4px;
+    font-size: 3vh;
+    color: rgb(238, 236, 236);
+}
+#container{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-image: linear-gradient(to top, rgb(236, 235, 235) , rgb(230, 227, 227));
+    height: 100vh;
+    font-size: 2.5vh;
+}
+#html{
+    height: 49%;
+    overflow-y: scroll;
+    box-shadow:5px 3px 5px 0 rgba(0, 0, 0, .3);
+    background-color: white;
+    padding-bottom: inherit;
+    border-bottom: 1px solid rgb(117, 4, 245);
+    
+}
+#css{
+    height: 98%;
+    overflow-y: scroll;
+    box-shadow:5px 3px 5px 0 rgba(0, 0, 0, .3);
+    background-color: white;
+    /*background-image: linear-gradient(to top, rgb(223, 189, 253) , rgb(198, 139, 250));*/
+    padding-bottom: inherit;
+    
+}
+.sectionTitle{
+    font-style: italic;
+    font-size: 6vh;
+    color: rgb(77, 23, 138);
+    font-weight: bold;
+}
+
+.subContent{
+    padding-left: 5vw;
+}
+.subSectionTitle{
+    font-weight: bold;
+    font-size: 3.8vh;
+    color: rgba(77, 23, 138, 0.699);
+}
+.render{
+    padding-left: 2.5vw;
+}
+.modal{
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    display: none;
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+    background-color: white;
+    box-shadow:5px 3px 5px 0 rgba(0, 0, 0, .5);
+    padding: 0px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.modalSection{
+    width: 100%;
+}
+.header{
+    height: 15%;
+    font-size: 5vh;
+    
+    box-shadow:5px 3px 5px 0 rgba(0, 0, 0, .5);
+}
+.imagePreview{
+    height: 70%;
+}
+.actions{
+    position: relative;
+    height: 5%;
+}
+.button.agree{
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+    background-color: rgb(23, 139, 23);
+    color: white;
+    border: 1px solid rgb(16, 139, 16);
+    border-bottom: 2.2px solid rgb(3, 92, 3);
+    border-radius: 25%;
+    width: 5vw;
+    font-size: 4.2vh;
+    height: 5vh;
+    float: right;
+}
+.button.agree:focus{
+    border-bottom: 2.2px solid rgb(6, 133, 6);
+}
+.options{
+    color: rgb(196, 164, 226);
+    border-bottom: 1.5px solid white;
+}
+.options:hover{
+    color: white;
+    font-size: 110%;
+    border-bottom: 1.5px solid purple;
+}

@@ -1,0 +1,2 @@
+En la clase de hoy veremos formularios,secciones,botones,media,entidades,codigo ascii,eventos css y posicionamiento absoluto 
+La clase encluye el codigo a usar (En la clase se realizara la explicacion) y el ejercicio de reafirmación de conocimientos.
