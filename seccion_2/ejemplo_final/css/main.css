@@ -78,7 +78,8 @@ i:hover{
 .mainSections.options{
     flex-grow:3;
     flex-basis:20%;
-    
+    position: sticky;
+    padding-top: 1vh;
 }
 .mainSections.news{
     flex-grow:3;
@@ -90,6 +91,7 @@ i:hover{
     flex-basis:10%;
     
 }
+
 .logo{
     width: 1.8vw;
     border: none;
@@ -179,4 +181,7 @@ textarea{
 }
 .add.btn.image{
     width: 25%;
+}
+.subheader.lateral{
+    color: #1d2129;
 }
