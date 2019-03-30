@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/class.css">
+</head>
+<body>
+    <section id="header">
+        <h1 id="mainTitle">Clase 1</h1>
+        <p class="description">Introducci&oacute;n a Js</p>
+        <small><button class="options" id="Preview">Ejercicio Preview</button><button class="options">Notas</button></small>
+    </section>
+    <section id="container">
+        <section id="js">
+            <h2 class="sectionTitle">Js</h2>
+            <hr/>
+            <p>
+                Introducci&oacute;n a JavaScript
+            </p>
+            <section class="subContent">
+            <ul>
+                <li>
+                    <h3 class="subSectionTitle">Tipos de datos</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    int,double,float,bool,string
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <iframe src="https://codesandbox.io/embed/1q44vm9kwq?fontsize=14&module=%2Fpackage.json&view=preview" title="static" style="width:70%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">Ciclos</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    for , while, do while
+    
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <div class="tempo">
+                                    <iframe src="https://codesandbox.io/embed/pyo1w1v1p0?fontsize=14&view=preview" title="static" style="width:70%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </li>
+                <!--
+                <li>
+                    <h3 class="subSectionTitle">Max width and height/ Overflow</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class.heightMax{
+        max-height:20px;
+        overflow-y:hidden;
+    }
+    .class.widthMax{
+        max-width:20px;
+        overflow-x:scroll;
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <div>
+                                    <div class="heightMax">
+                                        <strong>Height</strong>
+                                        <p>
+                                            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                                        </p>
+                                    </div>
+                                    <br/>
+                                    <div class="widthMax">
+                                        <strong>Width</strong>
+                                        <p>
+                                            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">Display</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class.none{
+        display:none;
+    }
+    .class.block{
+        display:block;
+    }
+    .class.inline{
+        display:inline;
+    }
+    .class.inlineBlock{
+        display:inline-block;
+    }
+    .class.flex{
+        display:flex; //Lo veremos en la siguiente clase
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <div>
+                                    <div class="tempo blocks">
+                                        <div class="none">
+                                            Hola a todos
+                                        </div>
+                                    </div>
+                                    <div class="tempo blocks">
+                                        <div class="block">
+                                            Block
+                                        </div>
+                                        <div class="block">
+                                            a
+                                        </div>
+                                        <div class="block">
+                                            b
+                                        </div>
+                                        <div class="block">
+                                            c
+                                        </div>
+                                    </div>
+                                    <div class="tempo blocks">
+                                        <div class="inline">
+                                            Inline
+                                        </div>
+                                        <div class="inline">
+                                            a
+                                        </div>
+                                        <div class="inline">
+                                            b
+                                        </div>
+                                        <div class="inline">
+                                            c
+                                        </div>
+                                    </div>
+                                    <div class="tempo blocks">
+                                        <div class="inlineBlock">
+                                            Inline-Block
+                                        </div>
+                                        <div class="inlineBlock">
+                                            a
+                                        </div>
+                                        <div class="inlineBlock">
+                                            b
+                                        </div>
+                                        <div class="inlineBlock">
+                                            c
+                                        </div>
+                                    </div>
+                                    <div class="tempo blocks flex">
+                                        <div class="item">
+                                            Flex
+                                        </div>
+                                        <div class="item">
+                                            a
+                                        </div>
+                                        <div class="item">
+                                            b
+                                        </div>
+                                        <div class="item">
+                                            c
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">Position</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class.absolute{
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <div class="tempo size">
+                                    <span class="absolute">
+                                        Absolute text
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">Shadow</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class.textShadow{
+        text-shadow: top left right bottom color; 
+        // Recomiendo un color rgb(0,0,0.4); para un efecto de una sombra ligera semi negra
+    }
+    .class.boxShadow{
+        box-shadow: top left right bottom color;
+        // Recomiendo un color rgb(0,0,0.4); para un efecto de una sombra ligera semi negra
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <div class="tempo">
+                                    <span class="textShadow">
+                                        Text Shadow
+                                    </span>
+                                    <span class="boxShadow">
+                                        Box Shadow
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">Cursor</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class.cursor{
+        cursor: pointer; //alias help move progress not-allowed text
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <div class="tempo">
+                                        <div class="cursor">
+                                                Div que parece boton
+                                            </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">Font</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    .class.ancho{
+        font-weight: bold;
+        //O un numero
+    }
+    .class.grande{
+        font-size:5vh;
+        //Responsivo
+    }
+    .class.tipo{
+        @import url('https://fonts.googleapis.com/someMethod?name=""');
+        font-family: Arial, Helvetica, sans-serif;
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <ul>
+                                    <li class="font ancho">
+                                        Texto Ancho
+                                    </li>
+                                    <li class="font grande">
+                                        Texto Grande
+                                    </li>
+                                    <li class="font tipo">
+                                        Texto con fontFamily<br/>
+                                        <a href="https://fonts.google.com/">Descargar fonts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                </li>
+                -->
+            </ul>
+            </section>
+        </section>
+    </section>
+    <div id="modal" class="modal">
+        <div class="header modalSection">
+            Crear un Blog
+        </div>
+        <div class="imagePreview modalSection">
+            <img src="../resources/preview.png">
+        </div>
+        <div id="close" class="actions modalSection">
+            <button class="button agree">Va!</button>
+        </div>
+        
+    </div>
+</body>
+</html>

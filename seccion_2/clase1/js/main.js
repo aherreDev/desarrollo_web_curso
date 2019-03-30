@@ -10,4 +10,4 @@ window.onload = ()=>{
     a.addEventListener("click", mostrarImagen, false); 
     b.addEventListener("click", ocultarImagen, false); 
 }
-document.getElementById("resultados").innerHTML = "hola";
+
