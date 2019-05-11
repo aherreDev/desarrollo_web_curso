@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/class.css">
+</head>
+<body>
+    <section id="header">
+        <h1 id="mainTitle">Clase 5</h1>
+        <p class="description">Entendiendo AJAX</p>
+        <small><button class="options" id="Preview">Ejercicio Preview</button><button class="options">Notas</button></small>
+    </section>
+    <section id="container">
+        <section id="js">
+            <h2 class="sectionTitle">Js</h2>
+            <hr/>
+            <p>
+                Como usar AJAX con el objeto XMLHttpRequest
+            </p>
+            <section class="subContent">
+            <ul>
+                <li>
+                    <h3 class="subSectionTitle">Qu&eacute;s?</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+        Ajax (Asynchronous JavaScript and XML)
+        Ajax define un método de iniciar un cliente con la
+        comunicación del servidor sin recargas de páginas.
+        Proporciona una forma de permitir actualizaciones de página parciales.
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <img width="1%" height="1%" src="https://www.ibm.com/support/knowledgecenter/es/SS8PJ7_9.6.1/com.ibm.etools.webtoolscore.doc/images/traditionalWebAppModel.gif">
+
+                            </div>
+                            
+                        </div>
+                </li>
+                <li>
+                    <h3 class="subSectionTitle">objeto XMLHttpRequest</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    let xhr = new XMLHttpRequest();
+    xhr.open("Metodo", "url", true);
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText)
+        }
+    }
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <iframe src="https://codesandbox.io/embed/5vk2kmj5z4?fontsize=14&view=preview" title="static" style="width:70%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            </div>
+                        </div>
+                </li>
+                
+            </ul>
+            </section>
+        </section>
+    </section>
+    <div id="modal" class="modal">
+        <div class="header modalSection">
+            Crea tu SpaceWar
+        </div>
+        <div class="imagePreview modalSection">
+            <ol>
+                <li>
+                    Crear un web site similar a la app de tinder
+                </li>
+                <li>
+                    Que muestre una imagen random junto con datos como nombre,descripcion y correo (Pueden ser más)
+                </li>
+                <li>
+                    Los datos deben de ser obtenidos de la api de faker.js
+                </li>
+                <li>
+                    En caso de darle en la opcion de siguiente debera visualizarce un  nuevo perfil
+                </li>
+                <li>
+                    En caso de hacer match se despliega un alert informando del fin del programa
+                </li>
+            </ol>
+            
+            <img onclick="window.open('https://www.iphoned.nl/wp-content/uploads/2015/11/tinder-update1.jpg');" src="https://www.iphoned.nl/wp-content/uploads/2015/11/tinder-update1.jpg">
+        </div>
+        <div id="close" class="actions modalSection">
+            <button class="button agree">Va!</button>
+        </div>
+        
+    </div>
+</body>
+</html>
