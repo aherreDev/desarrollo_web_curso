@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    
     <script src="../js/main.js"></script>
 </head>
 <body>
@@ -19,19 +24,19 @@
                         <i class="fab fa-facebook-square fa-2x"></i>
                     </li>
                     <li>
-                        <input />
+                        <input class="main"/>
                     </li>
                 </div>
                 <div class="items right">
                     <ul>
-                        <li>
+                        <li class="user">
                             <img class="userSmallLogo" src="https://scontent.felp1-1.fna.fbcdn.net/v/t1.0-1/c0.1.160.160a/p160x160/18056654_1765260630156710_8923932480773069792_n.jpg?_nc_cat=107&_nc_ht=scontent.felp1-1.fna&oh=29b486be234f9b845aaf0978dd9ff82f&oe=5D1025F7" />
-                            Alberto Roman Herrera Espinoza
+                            <span id="userName">Alberto Roman</span>
                         </li>
-                        <li>
+                        <li class="text">
                             Inicio
                         </li>
-                        <li>
+                        <li class="text">
                             Crear
                         </li>
                         <li>
@@ -44,7 +49,10 @@
                             <i class="fas fa-bell fa-lg"></i>
                         </li>
                         <li>
-                            <img src="../resources/media/confi.png"/>
+                            <i class="fas fa-cog"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-angle-down"></i>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +63,7 @@
                 
             </span>
             <span id="sectionOptions" class="mainSections options">
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://scontent.felp1-1.fna.fbcdn.net/v/t1.0-1/c0.1.160.160a/p160x160/18056654_1765260630156710_8923932480773069792_n.jpg?_nc_cat=107&_nc_ht=scontent.felp1-1.fna&oh=29b486be234f9b845aaf0978dd9ff82f&oe=5D1025F7">
                     </span>
@@ -63,15 +71,16 @@
                         Alberto Roman Herrera Espinoza
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/dusk/64/000000/google-news.png">
                     </span>
                     <span>
-                        Noticias
+                        <a href="#ex1" rel="modal:open">Noticias</a>
+                        
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/color/64/000000/facebook-messenger.png">
                     </span>
@@ -79,7 +88,7 @@
                         Messenger
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/dusk/48/000000/tv-show.png">
                     </span>
@@ -93,7 +102,7 @@
                         Accesos directos
                     </strong>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/office/64/000000/conference.png">
                     </span>
@@ -101,7 +110,7 @@
                         Grupo 1
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/office/64/000000/conference.png">
                     </span>
@@ -109,7 +118,7 @@
                         Grupo 2
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/color/48/000000/calendar.png">
                     </span>
@@ -123,7 +132,7 @@
                         Explorar
                     </strong>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/ultraviolet/40/000000/groups.png">
                     </span>
@@ -131,7 +140,7 @@
                         Grupos
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/doodle/48/000000/filled-flag.png">
                     </span>
@@ -139,7 +148,7 @@
                         Paginas
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/color/48/000000/save-close.png">
                     </span>
@@ -147,7 +156,7 @@
                         Guardado
                     </span>
                 </div>
-                <div>
+                <div class="optionButton">
                     <span>
                         <img class="avatar" src="https://img.icons8.com/color/48/000000/calendar.png">
                     </span>
@@ -161,9 +170,9 @@
                     <span class="close">
                         <i class="fas fa-times"></i>
                     </span>
-                    <span>
-                            <img class="mes1IMG" src="https://png.pngtree.com/element_origin_min_pic/17/01/06/630098724255207640c89ee824cd7b50.jpg" />
-                    </span>
+                    
+                    <img class="mes1IMG" src="https://png.pngtree.com/element_origin_min_pic/17/01/06/630098724255207640c89ee824cd7b50.jpg" />
+                    
                     <div class="messaggeText">
                         <div>
                             <h3>Recordar Contrase&ntilde;a</h3>
@@ -180,12 +189,12 @@
                      </h3>
                     </div>
                     <div class="add textArea">
-                        <span>
+                        
                             <img class="avatar" src="https://scontent.felp1-1.fna.fbcdn.net/v/t1.0-1/c0.1.160.160a/p160x160/18056654_1765260630156710_8923932480773069792_n.jpg?_nc_cat=107&_nc_ht=scontent.felp1-1.fna&oh=29b486be234f9b845aaf0978dd9ff82f&oe=5D1025F7">
-                        </span>
-                        <span>
+                        
+                        
                             <textarea cols="90" rows="2" placeholder="Qué estas pensando Alberto?"></textarea>
-                        </span>
+                        
                     </div>
                     <div class="add options">
                         <div class="add btnContainer">
@@ -214,7 +223,42 @@
                     </div>
                 </div>
                 <div class="card publication">
-                    
+                    <div class="add title author">
+                        <div class="tempoCont">
+                            <img class="userSmallLogo publication" src="https://s3.amazonaws.com/uifaces/faces/twitter/stefanozoffoli/128.jpg" />
+                            <span class="userAuthor Name">Tu compa el Dj</span>
+                        </div>
+                    </div>
+                    <div class="publication body">
+                        <p class="publication container">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                        <div id="imageSpace_" class="publication container">
+                            <img class="publication" src="http://lorempixel.com/640/480/nightlife" />
+                        </div>
+                    </div>
+                    <div class="actions publication">
+                        <hr/>
+                        <button class="button reaction">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Me gusta</span>
+                        </button>
+                        <button class="button reaction">
+                            <i class="far fa-comment"></i>
+                            <span>Comentar</span>
+                        </button>
+                        <button class="button reaction">
+                            <i class="fas fa-share"></i>
+                            <span>Compartir</span>
+                        </button>
+                    </div>
+                    <div class="comments">
+                        <hr/>
+                        <div class="commentsBox">
+                            <img class="avatar" src="https://scontent.felp1-1.fna.fbcdn.net/v/t1.0-1/c0.1.160.160a/p160x160/18056654_1765260630156710_8923932480773069792_n.jpg?_nc_cat=107&_nc_ht=scontent.felp1-1.fna&oh=29b486be234f9b845aaf0978dd9ff82f&oe=5D1025F7">
+                            <input class="comment Input" />
+                        </div>
+                    </div>
                 </div>
             </span>
             <span class="mainSections news">
@@ -226,7 +270,13 @@
         </div>
         <div id="lateralBar">
             Jugados Recientemente
+            <h1>N<br/>O<br/>-<br/>D<br/>I<br/>S<br/>P<br/>O<br/>N<br/>I<br/>B<br/>L<br/>E<br/></h1>
         </div>
+    </div>
+    
+    <div id="ex1" class="modal">
+        <p>Esta opcion esta deshabilitada.</p>
+        
     </div>
 </body>
 </html>
