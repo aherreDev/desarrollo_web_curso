@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/class.css">
+</head>
+<body>
+    <section id="header">
+        <h1 id="mainTitle">Clase 4</h1>
+        <p class="description">Repasemos lo aprendido</p>
+        <small><button class="options" id="Preview">Ejercicio Preview</button><button class="options">Notas</button></small>
+    </section>
+    <section id="container">
+        <section id="js">
+            <h2 class="sectionTitle">Js -Buscaminas</h2>
+            <hr/>
+            <p>
+                Repaso final de Js mediante elaboraci&oacute;n de un juego
+            </p>
+            <section class="subContent">
+            <ul>
+                <li>
+                    <h3 class="subSectionTitle">Demostración</h3>
+                    <div>
+                            <strong>Codigo</strong>
+                            <pre>
+    Para ver codigo:
+    <a href="https://codesandbox.io/s/zq0rk8m54x?fontsize=14&view=editor">
+        <img class="sand" alt="Edit static" src="https://codesandbox.io/static/img/play-codesandbox.svg" width="20%">
+      </a>
+      
+                            </pre>
+                            <strong>En DOM</strong>
+                            <div class="render">
+                                <iframe src="https://codesandbox.io/embed/zq0rk8m54x?fontsize=14&view=preview" title="static" style="width:70%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            </div>
+                        </div>
+                </li>
+                
+            </ul>
+            </section>
+        </section>
+    </section>
+    <div id="modal" class="modal">
+        <div class="header modalSection">
+            Haciendo nuestro mini buscaminas
+        </div>
+        <div class="imagePreview modalSection">
+            <ol>
+                <li>
+                    Crea una imitacion de buscaminas usando lo aprendido
+                </li>
+                <li>
+                    Las casillas deberan cambiar dependiendo del contenido de esta misma
+                </li>
+                <li>
+                    El orden y cantidad de minas queda a su disposici&oacute;n se recomienda usar numeros aleatorios
+                </li>
+            </ol>
+            <img src="../source/busca_minas.png">
+            <!--<img src="../resources/preview.png">-->
+        </div>
+        <div id="close" class="actions modalSection">
+            <button class="button agree">Va!</button>
+        </div>
+        
+    </div>
+</body>
+</html>
