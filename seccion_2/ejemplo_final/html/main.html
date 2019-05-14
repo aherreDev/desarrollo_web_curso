@@ -85,7 +85,7 @@
                         <img class="avatar" src="https://img.icons8.com/color/64/000000/facebook-messenger.png">
                     </span>
                     <span>
-                        Messenger
+                        <a href="#ex1" rel="modal:open">Messenger</a>
                     </span>
                 </div>
                 <div class="optionButton">
@@ -93,7 +93,7 @@
                         <img class="avatar" src="https://img.icons8.com/dusk/48/000000/tv-show.png">
                     </span>
                     <span>
-                        Watch
+                        <a href="#ex1" rel="modal:open">Watch</a>
                     </span>
                 </div>
                 <hr/>
@@ -107,7 +107,7 @@
                         <img class="avatar" src="https://img.icons8.com/office/64/000000/conference.png">
                     </span>
                     <span>
-                        Grupo 1
+                        <a href="#ex1" rel="modal:open">Grupo 1</a>
                     </span>
                 </div>
                 <div class="optionButton">
@@ -115,7 +115,7 @@
                         <img class="avatar" src="https://img.icons8.com/office/64/000000/conference.png">
                     </span>
                     <span>
-                        Grupo 2
+                        <a href="#ex1" rel="modal:open">Grupo 2</a>
                     </span>
                 </div>
                 <div class="optionButton">
@@ -123,7 +123,7 @@
                         <img class="avatar" src="https://img.icons8.com/color/48/000000/calendar.png">
                     </span>
                     <span>
-                        Evento 1
+                        <a href="#ex1" rel="modal:open">Evento 1</a>
                     </span>
                 </div>
                 <hr/>
@@ -137,7 +137,7 @@
                         <img class="avatar" src="https://img.icons8.com/ultraviolet/40/000000/groups.png">
                     </span>
                     <span>
-                        Grupos
+                        <a href="#ex1" rel="modal:open">Grupos</a>
                     </span>
                 </div>
                 <div class="optionButton">
@@ -145,7 +145,7 @@
                         <img class="avatar" src="https://img.icons8.com/doodle/48/000000/filled-flag.png">
                     </span>
                     <span>
-                        Paginas
+                        <a href="#ex1" rel="modal:open">Paginas</a>
                     </span>
                 </div>
                 <div class="optionButton">
@@ -153,7 +153,7 @@
                         <img class="avatar" src="https://img.icons8.com/color/48/000000/save-close.png">
                     </span>
                     <span>
-                        Guardado
+                        <a href="#ex1" rel="modal:open">Guardado</a>
                     </span>
                 </div>
                 <div class="optionButton">
@@ -161,11 +161,11 @@
                         <img class="avatar" src="https://img.icons8.com/color/48/000000/calendar.png">
                     </span>
                     <span>
-                        Eventos
+                        <a href="#ex1" rel="modal:open">Eventos</a>
                     </span>
                 </div>
             </span>
-            <span class="mainSections content">
+            <span id="content" class="mainSections content">
                 <div class="card messagge">
                     <span class="close">
                         <i class="fas fa-times"></i>
@@ -192,29 +192,31 @@
                         
                             <img class="avatar" src="https://scontent.felp1-1.fna.fbcdn.net/v/t1.0-1/c0.1.160.160a/p160x160/18056654_1765260630156710_8923932480773069792_n.jpg?_nc_cat=107&_nc_ht=scontent.felp1-1.fna&oh=29b486be234f9b845aaf0978dd9ff82f&oe=5D1025F7">
                         
-                        
-                            <textarea cols="90" rows="2" placeholder="Qué estas pensando Alberto?"></textarea>
+                            <input type="url" id="imageOfPublication" />
+                            <textarea id="textOfPublication" cols="90" rows="2" placeholder="Qué estas pensando Alberto?"></textarea>
+                            <br/>
+                            <img id="preview2" src="">
                         
                     </div>
                     <div class="add options">
                         <div class="add btnContainer">
-                            <button class="add buttons">
+                            <button id="addImage" class="add buttons">
                                     <img class="add btn image" src="https://img.icons8.com/dusk/64/000000/picture.png">Foto/Video
                             </button>
                         </div>
                         <div class="add btnContainer">
                             <button class="add buttons">
-                                Etiquetar Ami..
+                                <a href="#ex1" rel="modal:open">Etiquetar Ami..</a>
                             </button>
                         </div>
                         <div class="add btnContainer">
                             <button class="add buttons">
-                                Sentimiento
+                                <a href="#ex1" rel="modal:open">Sentimiento</a>
                             </button>
                         </div>
                         <div class="add btnContainer">
-                            <button class="add buttons">
-                                    ...
+                            <button id="crearPublicacion" class="add buttons">
+                                    A&ntilde;adir
                             </button>
                         </div>
                         
@@ -276,7 +278,20 @@
     
     <div id="ex1" class="modal">
         <p>Esta opcion esta deshabilitada.</p>
-        
     </div>
+    <div id="ex2" class="modal">
+        <p>Error al subir publicaci&oacute;n, intente m&acute;n tarde.</p>
+    </div>
+    <div id="ex3" class="modal">
+        <h1>Ingrese el link de la imagen</h1>
+        <img id="preview1" src="http://transparency.greatheartsacademies.org/wp-content/uploads/sites/38/2018/10/default-placeholder.png">
+        <span>
+                <input id="preImageUrl" />
+                <button disabled id="updateImage">Subir</button>
+        </span>
+        <a id="closeUpdate" href="#" rel="modal:close">Close</a>
+    </div>
+    <a id="loadImage" href="#ex3" rel="modal:open"></a>
+    <a id="error1" href="#ex2" rel="modal:open"></a>
 </body>
 </html>
