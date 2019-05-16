@@ -1,5 +1,16 @@
 const avatarUrlTest = "https://scontent.felp1-1.fna.fbcdn.net/v/t1.0-1/c0.1.160.160a/p160x160/18056654_1765260630156710_8923932480773069792_n.jpg?_nc_cat=107&_nc_ht=scontent.felp1-1.fna&oh=29b486be234f9b845aaf0978dd9ff82f&oe=5D1025F7";
 const imageDefaultPreview1 = "http://transparency.greatheartsacademies.org/wp-content/uploads/sites/38/2018/10/default-placeholder.png";
+
+const Api = {
+    key:"",
+    name:"fakeFacebook"
+};
+const User = {
+    name:"",
+    email:"",
+    pass:""
+};
+
 window.onload = ()=>{
     document.getElementById('crearPublicacion').addEventListener("click",()=>{
         let a = document.getElementById("textOfPublication").value;
@@ -9,6 +20,7 @@ window.onload = ()=>{
     document.getElementById("addImage").addEventListener("click",handleLoadImageClick);
     document.getElementById("preImageUrl").addEventListener("input",handleImageInput);
     document.getElementById("updateImage").addEventListener("click",handleImageChange);
+
 }
 let handleLoadImageClick = ()=>{
     $('#loadImage').click();
@@ -38,7 +50,7 @@ let handlePublicationMake = (text,image,author)=>{
     date.ano = date.object.getFullYear();
     date.mes = date.object.getMonth() + 1;
     date.dia = date.object.getDay();
-    let push = subirPublicacion();
+    let push = subirPublicacion(text,(image)?image:false,`${date.dia}-${date.mes}-${date.ano}`);
     if(push.status){
         insertarPublicacion(push.id,author,text,(image)?image:false,`${date.dia}-${date.mes}-${date.ano}`,avatarUrlTest);
         
@@ -53,19 +65,71 @@ let handlePublicationMake = (text,image,author)=>{
     }
 }
 
-let subirPublicacion = ()=>{
+let subirPublicacion = (text,imageUrl,date)=>{
     //Temporal
+    
     if(Math.random() > 0.3){
         return {status:true,id:1};
     }else{
         return {status:false};
     }
+    
     ///////////////////
 
+    /*Aqui va el XMLHttpRequest*/
     /*
-        Aqui va el XMLHttpRequest
+    let request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    request.open("GET", `http://localhost:3002/set/user/publication?key=${Api.key}&email=${User.email}&text=${text}&images=${imageUrl}&date=${date}`, false);
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let a = JSON.parse(this.responseText);
+            return a;
+            //https://topesdegama.com/app/uploads/2018/03/Fondo-Huawei-P20Lite-700x400.jpg
+        }
+    };
+    request.send();
     */
+    //let a = peticionSubmmit();
+    //return a.status;
+   
 }
+///Inicio seccion de XMLHTTPREQUEST
+let peticionPublications = ()=>{
+    let request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    request.open("GET", `http://aherredev.openode.io/get/user/publications?key=${Api.key}&email=${User.email}`, true);
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            return JSON.parse(this.responseText);
+        }
+    };
+    request.send();
+}
+let peticionSubmmit = (text,imageUrl,date)=>{
+    let request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    request.open("GET", `http://localhost:3002/set/user/publication?key=${Api.key}&email=${User.email}&text=${text}&images=${imageUrl}&date=${date}`, true);
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            return JSON.parse(this.responseText);
+        }
+    };
+    request.send();
+}
+///////////////////////////////////
 let insertarPublicacion = (id,autor,text,imagen,fecha,avatar)=>{
     let htmlData = `<div id="publication_${id}" class="card publication">
             <div class="add title author">
