@@ -81,3 +81,6 @@ pre{
 .render{
     padding-left: 2.5vw;
 }
+.enlace:hover{
+    color:blue;
+}
